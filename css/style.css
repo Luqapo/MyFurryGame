@@ -59,7 +59,7 @@ section#over {
   top: 0;
   z-index: 1;
   padding: 10px;
-  background-color: rgba(255, 255, 0, 0.75);
+  background-color: rgba(149, 125, 68, 0.75);
 }
 
 section#over div {
@@ -80,7 +80,7 @@ section#over div {
   width: 300px;
   height: 60px;
   display: block;
-  background-color: lightslategrey;
+  background-color: cadetblue;
   color: black;
   text-align: center;
   font-size: 30px;
