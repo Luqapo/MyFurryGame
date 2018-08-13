@@ -91,7 +91,7 @@ function Game(){
 
 var newGame= new Game();
 var tryAgain = document.getElementById("newGame");
-document.addEventListener("keydown",function(){
+document.addEventListener("keydown",function(event){
     newGame.turnFurry(event);
 })
 
@@ -99,7 +99,7 @@ tryAgain.addEventListener('click',function(){
     document.querySelector("#over").classList.add("invisible");
     document.querySelector(".coin").classList.remove("coin");
     var newGame= new Game();
-    document.addEventListener("keydown",function(){
+    document.addEventListener("keydown",function(event){
         newGame.turnFurry(event);
     })
     newGame.startGame();
