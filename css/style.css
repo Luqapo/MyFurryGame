@@ -75,3 +75,15 @@ section#over div {
 .invisible {
   display: none;
 }
+
+#over  #newGame{
+  width: 300px;
+  height: 60px;
+  display: block;
+  background-color: lightslategrey;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 37vw;
+}

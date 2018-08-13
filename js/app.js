@@ -80,7 +80,6 @@ function Game(){
     }
     this.gameOver = function () {
         if(this.furry.x < 0 || this.furry.x > 9 || this.furry.y < 0 || this.furry.y > 9){
-            debugger;
             clearInterval(this.idSetInterval);
             this.hideVisibleFurry();
             document.querySelector("#over").classList.remove("invisible");
@@ -91,9 +90,19 @@ function Game(){
 
 
 var newGame= new Game();
-
+var tryAgain = document.getElementById("newGame");
 document.addEventListener("keydown",function(){
     newGame.turnFurry(event);
+})
+
+tryAgain.addEventListener('click',function(){
+    document.querySelector("#over").classList.add("invisible");
+    document.querySelector(".coin").classList.remove("coin");
+    var newGame= new Game();
+    document.addEventListener("keydown",function(){
+        newGame.turnFurry(event);
+    })
+    newGame.startGame();
 })
 
 newGame.startGame();
