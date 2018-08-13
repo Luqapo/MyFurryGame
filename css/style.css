@@ -63,13 +63,13 @@ section#over {
 }
 
 section#over div {
-  display: inline-block;
-  width: 100%;
+  width: 30%;
   text-align: center;
   font-size: 30px;
   font-weight: bolder;
   color: brown;
   margin-top: 100px;
+  margin-left: 35%;
 }
 
 .invisible {
@@ -85,5 +85,5 @@ section#over div {
   text-align: center;
   font-size: 30px;
   border-radius: 10px;
-  margin-left: 37vw;
+  margin: 0 auto;
 }
